@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "BEARLab-UniTn/BEARLab-UniTn.github.io",
+    "data-repo": "BEARs-of-UNITN/bear.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",
