@@ -1,8 +1,6 @@
 ---
 layout: page
 permalink: /people/
-title: People
-description: Discover the people behind our lab – their expertise, projects, and contributions
 nav: true
 nav_order: 7
 ---
@@ -17,9 +15,8 @@ nav_order: 7
 </div>
 
 <h2 class="people-section-title">Faculty</h2>
-
-<div class="people-grid">
-  <a class="person-card featured-person clickable-card" href="{{ '/people/paolo-giorgini/' | relative_url }}">
+<div class="people-grid three-col">
+  <a class="person-card clickable-card" href="{{ '/people/paolo-giorgini/' | relative_url }}">
     <div class="person-image-wrap">
       <img src="{{ '/assets/img/Giorgini.jpg' | relative_url }}" alt="Paolo Giorgini" class="person-image">
     </div>
@@ -35,7 +32,6 @@ nav_order: 7
 </div>
 
 <h2 class="people-section-title">Researchers</h2>
-
 <div class="people-grid three-col">
   <a class="person-card clickable-card" href="{{ '/people/selene-tomassini/' | relative_url }}">
     <div class="person-image-wrap">
@@ -78,8 +74,7 @@ nav_order: 7
 </div>
 
 <h2 class="people-section-title">PhD Students</h2>
-
-<div class="people-grid">
+<div class="people-grid three-col">
   <a class="person-card clickable-card" href="{{ '/people/letizia-girardi/' | relative_url }}">
     <div class="person-image-wrap">
       <img src="{{ '/assets/img/Letizia.jpg' | relative_url }}" alt="Letizia Girardi" class="person-image">

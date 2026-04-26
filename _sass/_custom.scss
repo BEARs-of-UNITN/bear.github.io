@@ -238,16 +238,33 @@ nav.navbar {
 
 .people-section-title {
   margin: 2.5rem 0 1.25rem;
-  color: #1b2b4b;
+  color: #1b2b4b !important;
   font-size: 1.8rem;
   font-weight: 700;
-  border-bottom: none !important;
+  border: 0 !important;
   box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* remove the theme line under titles */
+.people-section-title::before,
+.people-section-title::after,
+h2.people-section-title::before,
+h2.people-section-title::after,
+h2::before,
+h2::after,
+.header-bar,
+.header-bar::before,
+.header-bar::after {
+  display: none !important;
+  content: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
 }
 
 .people-grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -266,11 +283,6 @@ nav.navbar {
   padding: 1.5rem;
   box-shadow: 0 12px 28px rgba(31, 51, 89, 0.08);
   min-height: 100%;
-}
-
-.person-card.featured-person {
-  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
-  border: 1px solid #d7e4ff;
 }
 
 .person-image-wrap {
@@ -294,11 +306,10 @@ nav.navbar {
   border-radius: 999px;
   background: #eef4ff;
   color: #3d5f9c;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
   line-height: 1.2;
   white-space: normal;
-  word-break: keep-all;
   max-width: max-content;
 }
 
@@ -315,7 +326,6 @@ nav.navbar {
   line-height: 1.7;
 }
 
-/* whole card clickable */
 a.person-card,
 a.person-card:hover,
 a.person-card:focus,
@@ -339,35 +349,33 @@ a.person-card:visited {
   color: #2f63c9;
 }
 
-/* remove purple line / unwanted borders on headings or anchors */
-.people-page hr,
-.people-page .header-bar,
-.people-page .post-header,
-.people-section-title::after,
-.people-section-title::before,
-h2.people-section-title::after,
-h2.people-section-title::before {
+/* remove any remaining horizontal rule on this page */
+hr {
   display: none !important;
   border: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+}
+
+/* if al-folio adds a line near titles or page header */
+.post-header,
+.post-title,
+.page-title,
+article hr,
+main hr,
+.container hr {
+  border: 0 !important;
   box-shadow: none !important;
-  content: none !important;
 }
 
-/* general fix for anchor underline while scrolling/clicking */
-a,
-a:hover,
-a:focus,
-a:active {
-  text-decoration-thickness: 0 !important;
-}
-
-/* remove focus outline only for these cards */
-a.person-card:focus-visible {
-  outline: 2px solid #b8d2f5;
-  outline-offset: 4px;
-}
-
+/* responsive */
 @media (max-width: 1100px) {
+  .people-grid.three-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
   .people-grid.three-col {
     grid-template-columns: 1fr;
   }
