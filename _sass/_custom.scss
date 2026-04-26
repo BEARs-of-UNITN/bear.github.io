@@ -2,9 +2,27 @@
    FIXED LIGHT PALETTE
    ========================= */
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 45%, #e7f0ff 100%);
   color: #1f2f46;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
 
 /* hide dark/light toggle if present */
