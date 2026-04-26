@@ -3,14 +3,6 @@ layout: about
 title: BEARLab
 permalink: /
 
-profile:
-  align: right
-  image: BEARLab-logo.PNG
-  image_circular: false
-  more_info: >
-    <p>Department of Information Engineering and Computer Science</p>
-    <p>University of Trento</p>
-
 selected_papers: false
 social: false
 
@@ -23,27 +15,115 @@ latest_posts:
   enabled: false
   scrollable: true
   limit: 3
+
+profile:
+  align: right
+  image: BEARLab-logo.PNG
+  image_circular: false
 ---
 
-Welcome to BEARLab, the **Biomedicine, Engineering & AI Research** Laboratory where science meets innovation! Our mission is to improve human health by combining biomedicine, engineering, and artificial intelligence.
+<style>
+  .about-intro h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+  }
 
-At BEARLab, we:
+  .about-intro p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 680px;
+    color: #444;
+    margin-bottom: 2.5rem;
+  }
 
-1. 🔬 Explore biomedical innovation with cutting-edge devices and diagnostics
-2. 🤖 Develop AI-driven solutions to understand complex biological systems
-3. 🛠️ Engineer practical technologies that bridge research and real-world applications
+  .hero-section {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 
-We collaborate with clinicians, engineers, and AI specialists to turn ideas into impact, train the next generation of researchers, and advance the frontier of biomedical technology.
+  .hero-section .eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 760px;
+    color: #555;
+  }
+
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .research-card {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  }
+
+  .research-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+  }
+
+  .research-card p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+  }
+
+  .card-icon {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-icon-blue { color: #3b82f6; }
+  .card-icon-purple { color: #8b5cf6; }
+  .card-icon-cyan { color: #06b6d4; }
+  .card-icon-green { color: #10b981; }
+  .card-icon-orange { color: #f59e0b; }
+  .card-icon-pink { color: #ec4899; }
+</style>
+
+<div class="about-intro">
+  <h1>BEARLab</h1>
+  <p>
+    An interdisciplinary research group at the University of Trento working on biomedicine,
+    engineering, and AI—developing intelligent systems to understand complex biological
+    processes and improve human health.
+  </p>
+</div>
 
 <section class="hero-section">
-  <div class="hero-inner">
-    <div class="eyebrow">WHAT WE DO</div>
-    <h1>Research Areas</h1>
-    <p class="hero-text">
-      BEARLab works at the intersection of biomedicine, engineering, and artificial intelligence,
-      developing methods and technologies for healthcare, disease understanding, and personalized medicine.
-    </p>
-  </div>
+  <div class="eyebrow">What We Do</div>
+  <h2>Research Areas</h2>
+  <p class="hero-text">
+    BEARLab works at the intersection of biomedicine, engineering, and artificial intelligence,
+    developing methods and technologies for healthcare, disease understanding, and personalized medicine.
+  </p>
 </section>
 
 <section class="research-grid-section">
@@ -96,6 +176,5 @@ We collaborate with clinicians, engineers, and AI specialists to turn ideas into
         useful, reliable, and real-world deployable solutions.
       </p>
     </div>
-
   </div>
 </section>
