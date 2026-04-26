@@ -30,9 +30,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/bear.github.io/events/";
           },
-        },{id: "nav-",
-          title: "",
-          description: "",
+        },{id: "nav-people",
+          title: "People",
+          description: "Discover the people behind our lab – their expertise, projects, and contributions",
           section: "Navigation",
           handler: () => {
             window.location.href = "/bear.github.io/people/";
