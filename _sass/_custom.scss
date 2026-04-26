@@ -46,6 +46,47 @@ body {
     margin-bottom: 5rem;
   }
 
+/* Container navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+/* Inner menu (la pill) */
+.navbar .container {
+  width: auto;
+  max-width: 720px;
+  background: #f5f6f8;
+  border-radius: 999px;
+  padding: 0.4rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Links */
+.navbar-nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3b4a5a;
+  padding: 0.3rem 0.2rem;
+}
+
+/* Active (BEARLab) */
+.navbar-nav .nav-link.active {
+  color: #2f6df6;
+  font-weight: 600;
+}
+
+.navbar > .container {
+  justify-content: center;
+}
+
 /* wider layout */
 .container,
 .wrapper,

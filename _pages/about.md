@@ -26,15 +26,13 @@ profile:
   <h1>Biomedicine, Engineering & AI Research </h1>
   <h2>Laboratory</h2>
   <p>
-    An interdisciplinary research group at the University of Trento working on biomedicine,
-    engineering, and AI—developing intelligent systems to understand complex biological
-    processes and improve human health.
+    An interdisciplinary research group at the University of Trento working on biomedicine, engineering and AI—developing intelligent systems to understand complex biological processes and improve human health.
   </p>
 </div>
-
+<div></div>
 <section class="hero-section">
   <div class="eyebrow">What We Do</div>
-  <h2>Research Areas</h2>
+  <h1>Research Areas</h1>
   <p class="hero-text">
     BEARLab works at the intersection of biomedicine, engineering, and artificial intelligence,
     developing methods and technologies for healthcare, disease understanding, and personalized medicine.
