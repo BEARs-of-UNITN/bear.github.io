@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://bearlab-unitn.github.io/sitemap.xml
+Sitemap: https://bears-of-unitn.github.io/bear.github.io/sitemap.xml
