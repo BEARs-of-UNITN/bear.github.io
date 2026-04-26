@@ -1,10 +1,6 @@
 ---
 layout: page
 permalink: /people/
-title: People
-description: Discover the people behind our lab – their expertise, projects, and contributions
-nav: true
-nav_order: 7
 ---
 
 <div class="people-hero">

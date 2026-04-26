@@ -1,10 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: /projects/
-description: Explore our collection of on-going projects.
-nav: true
-nav_order: 3
+permalk: /projects/
 display_categories: [work, fun]
 horizontal: false
 ---
