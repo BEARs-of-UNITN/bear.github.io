@@ -24,6 +24,28 @@ body {
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
 }
+.about-intro h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    letter-spacing: -0.03em;
+  }
+
+  .about-intro p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 680px;
+    color: #444;
+    margin-bottom: 5rem;
+  }
+
+  .about-intro h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #1f2f46;
+  }
 
 /* wider layout */
 .container,
