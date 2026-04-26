@@ -239,7 +239,10 @@ nav.navbar {
 .people-section-title {
   margin: 2.5rem 0 1.25rem;
   color: #1b2b4b;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .people-grid {
@@ -254,19 +257,20 @@ nav.navbar {
 
 .person-card {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 1.5rem;
-  align-items: center;
-  background: #ffffff;
-  border: 1px solid #e6ebf3;
-  border-radius: 24px;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e3ebf7;
+  border-radius: 28px;
   padding: 1.5rem;
-  box-shadow: 0 10px 30px rgba(31, 51, 89, 0.08);
+  box-shadow: 0 12px 28px rgba(31, 51, 89, 0.08);
+  min-height: 100%;
 }
 
 .person-card.featured-person {
-  border: 1px solid #d7e4ff;
   background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+  border: 1px solid #d7e4ff;
 }
 
 .person-image-wrap {
@@ -277,66 +281,97 @@ nav.navbar {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 22px;
   display: block;
 }
 
 .person-role {
-  display: inline-block;
-  margin-bottom: 0.75rem;
-  padding: 0.3rem 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+  padding: 0.45rem 0.8rem;
   border-radius: 999px;
   background: #eef4ff;
   color: #3d5f9c;
-  font-size: 0.82rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: normal;
+  word-break: keep-all;
+  max-width: max-content;
 }
 
 .person-content h3 {
   margin: 0 0 0.6rem;
   font-size: 1.5rem;
+  line-height: 1.2;
   color: #16233d;
 }
 
 .person-bio {
-  margin: 0 0 1rem;
+  margin: 0;
   color: #5a6780;
   line-height: 1.7;
 }
 
-.person-link {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 600;
+/* whole card clickable */
+a.person-card,
+a.person-card:hover,
+a.person-card:focus,
+a.person-card:visited {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.clickable-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  cursor: pointer;
+}
+
+.clickable-card:hover {
+  transform: translateY(-4px);
+  border-color: #c6daf7;
+  box-shadow: 0 16px 34px rgba(49, 79, 121, 0.12);
+}
+
+.clickable-card:hover h3 {
   color: #2f63c9;
 }
 
-.person-link:hover {
-  text-decoration: underline;
+/* remove purple line / unwanted borders on headings or anchors */
+.people-page hr,
+.people-page .header-bar,
+.people-page .post-header,
+.people-section-title::after,
+.people-section-title::before,
+h2.people-section-title::after,
+h2.people-section-title::before {
+  display: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  content: none !important;
 }
 
-/* =========================
-   TYPOGRAPHY
-   ========================= */
-
-p,
-li {
-  color: #40556f;
+/* general fix for anchor underline while scrolling/clicking */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration-thickness: 0 !important;
 }
 
-strong {
-  color: #18314c;
+/* remove focus outline only for these cards */
+a.person-card:focus-visible {
+  outline: 2px solid #b8d2f5;
+  outline-offset: 4px;
 }
 
-.header-bar,
-.post-header .desc {
-  border-color: transparent;
+@media (max-width: 1100px) {
+  .people-grid.three-col {
+    grid-template-columns: 1fr;
+  }
 }
-
-html {
-  scroll-padding-top: 100px;
-}
-
 /* =========================
    RESPONSIVE
    ========================= */
