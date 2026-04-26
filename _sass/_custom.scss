@@ -1,0 +1,66 @@
+body {
+  background: radial-gradient(circle at top, #0d1b3d 0%, #081224 45%, #050b17 100%);
+  color: #ffffff;
+}
+
+/* HERO */
+.hero-section {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #9fc3ff;
+  margin-bottom: 16px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.hero-text {
+  color: rgba(255,255,255,0.75);
+}
+
+/* GRID */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.research-card {
+  background: rgba(28,40,68,0.9);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.research-card h3 {
+  color: white;
+}
+
+.research-card p {
+  color: rgba(255,255,255,0.7);
+}
+
+/* NAVBAR FIX */
+.navbar {
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
