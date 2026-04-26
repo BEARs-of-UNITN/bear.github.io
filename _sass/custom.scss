@@ -1,0 +1,212 @@
+/* ===== Page background ===== */
+body {
+  background: radial-gradient(circle at top, #0d1b3d 0%, #081224 45%, #050b17 100%);
+  color: #ffffff;
+}
+
+/* ===== Main wrapper spacing ===== */
+.container,
+.wrapper,
+main .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: sticky;
+  top: 16px;
+  z-index: 1000;
+  margin-top: 12px;
+}
+
+.navbar .container {
+  background: rgba(11, 23, 52, 0.82);
+  border: 1px solid rgba(130, 160, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 999px;
+  padding: 10px 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* menu links */
+.navbar-nav .nav-link,
+.navbar .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.navbar .dropdown-toggle {
+  color: #e9eefc !important;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+  color: #ffffff !important;
+}
+
+/* ===== Hero section ===== */
+.hero-section {
+  text-align: center;
+  padding: 56px 0 36px;
+}
+
+.hero-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9fc3ff;
+  background: rgba(88, 138, 255, 0.16);
+  border: 1px solid rgba(120, 160, 255, 0.18);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 18px;
+}
+
+.hero-section h1 {
+  margin: 0 0 18px 0;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.hero-text {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.08rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* ===== Research cards ===== */
+.research-grid-section {
+  padding: 18px 0 60px;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.research-card {
+  background: rgba(28, 40, 68, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 24px;
+  padding: 28px 28px 26px;
+  min-height: 260px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(125, 165, 255, 0.28);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+.research-card h3 {
+  margin: 0 0 14px 0;
+  color: #ffffff;
+  font-size: 1.55rem;
+  line-height: 1.28;
+  font-weight: 760;
+}
+
+.research-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+/* ===== Card icons ===== */
+.card-icon {
+  width: 54px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 1.15rem;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+.card-icon-blue {
+  background: rgba(225, 233, 246, 0.95);
+  color: #5aa0ff;
+}
+
+.card-icon-purple {
+  background: rgba(72, 39, 132, 0.92);
+  color: #d1b8ff;
+}
+
+.card-icon-cyan {
+  background: rgba(18, 73, 112, 0.92);
+  color: #59cfff;
+}
+
+.card-icon-green {
+  background: rgba(11, 83, 71, 0.92);
+  color: #29f0a9;
+}
+
+.card-icon-orange {
+  background: rgba(241, 236, 225, 0.95);
+  color: #ff7e1d;
+}
+
+.card-icon-pink {
+  background: rgba(247, 236, 243, 0.96);
+  color: #ff6cc0;
+}
+
+/* ===== Make anchor scrolling nicer ===== */
+html {
+  scroll-padding-top: 110px;
+}
+
+/* ===== Optional: make page title spacing cleaner if al-folio prints it ===== */
+.post-title,
+.header-bar,
+.page-title {
+  display: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1100px) {
+  .research-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 34px;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .research-card {
+    min-height: auto;
+  }
+
+  .navbar .container {
+    border-radius: 24px;
+    padding: 10px 14px;
+  }
+}
